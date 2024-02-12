@@ -1,5 +1,4 @@
 
-
 var key = "d12447f70e875413282a48b9cbe48257";
 var secret = "74f692977dd47736";
 var link = "https://api.flickr.com/services/rest?";
