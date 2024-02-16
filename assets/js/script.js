@@ -59,6 +59,7 @@ function forcedownload(link) {
         tag.href = imageUrl;
         tag.download = link.id;
         document.body.appendChild(tag);
+    
         tag.click();
         document.body.removeChild(tag);
         window.URL.revokeObjectURL(imageUrl)
@@ -71,3 +72,13 @@ function setTheme(theme) {
     localStorage.setItem('movie-theme', theme);
 }
 setTheme(localStorage.getItem('movie-theme') || '#1A4B84');
+// Rest of your code...
+
+// Add event listener for 'Enter' key press
+$("#name").keypress(function(event) {
+    if (event.which === 13) {
+        searchImages();
+    }
+});
+
+// Rest of your code...
